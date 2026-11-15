@@ -1,0 +1,18 @@
+﻿Página de origen;Acción;Página de destino;Condición o efecto
+Acceso;Ingresar paciente;Portal;Credenciales válidas
+Acceso;Crear cuenta;Registro;Mostrar duplicado y activación
+Portal;Reservar una hora;Reserva 1 sucursal;Inicio de RF 05
+Reserva 1 sucursal;Elegir sucursal;Reserva 2 especialidad;Filtrar especialidades
+Reserva 2 especialidad;Elegir especialidad;Reserva 3 médico;Filtrar profesionales
+Reserva 3 médico;Elegir médico;Reserva 4 horario;Mostrar agenda
+Reserva 4 horario;Elegir horario y continuar;Reserva 5 confirmación;Revalidar disponibilidad
+Reserva 5 confirmación;Confirmar;Reserva exitosa;Código y mensaje
+Mis citas;Anular;Confirmación o restricción;Regla de 24 horas
+Mis citas;Reagendar;Selección y confirmación;Conservar reserva si falla
+Secretaría;Modificar agenda;Impactos y confirmación;Listar reservas afectadas
+Caja;Registrar bono inválido;Error de bono;Sin pago ni espera
+Caja;Registrar pago válido;Recibo;Habilitar espera
+Médico;Marcar atendido;Lista actualizada;Solo pacientes propios del día
+Administración;Calcular comisión;Detalle de comisión;Base especialidad por porcentaje
+Secretaría;Emitir comisión;Comprobante pendiente;Cerrar cálculo
+Secretaría;Registrar referencia;Comisión pagada;No transferir fondos

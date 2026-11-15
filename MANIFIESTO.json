@@ -1,0 +1,460 @@
+{
+  "version": "0.2.0",
+  "files": [
+    {
+      "file": ".github/ISSUE_TEMPLATE/cambio.yml",
+      "bytes": 578,
+      "sha256": "e2117a09eda1ec196041a16f53e11ee613498ca1375c89ef93f71f09da539b0e"
+    },
+    {
+      "file": ".github/workflows/pages.yml",
+      "bytes": 1014,
+      "sha256": "e6a8b9b4cf89e8a32069d1214404efc715737ff172f34ca36be6d17eeb15d00b"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 81,
+      "sha256": "196ed6f373363bfcbd07a83fa65cfbd52de8360d8c57efce21a544cf85167e8a"
+    },
+    {
+      "file": ".nojekyll",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "file": "AGENTS.md",
+      "bytes": 2070,
+      "sha256": "e1eadf9a47c7a1b659c7a136a1efa0d185486325127b76cf66d04fa82627726c"
+    },
+    {
+      "file": "Aplicacion/app.js",
+      "bytes": 81906,
+      "sha256": "572b91d5b1ba284061a3dd9bfe829f46c6aaafddfbcff9cf21da051a47e8e63e"
+    },
+    {
+      "file": "Aplicacion/domain.js",
+      "bytes": 35429,
+      "sha256": "8befbc7088a951f0ec24a766e6edfe5e1b4c26d2d3c3716cbd49705590a88862"
+    },
+    {
+      "file": "Aplicacion/galenos.jpg",
+      "bytes": 235352,
+      "sha256": "feb9895d7d1ee5a115a8098980be0f345d5cc41bc786f216bb13c9b0069036f3"
+    },
+    {
+      "file": "Aplicacion/index.html",
+      "bytes": 1151,
+      "sha256": "d1fccb11ae3dd4fdbe1e48a78d46d95d2c08b9cab2c734f58c798114d8395c82"
+    },
+    {
+      "file": "Aplicacion/styles.css",
+      "bytes": 24834,
+      "sha256": "24eba850b51faa40c3a7dd903df5593401ead6798f7a3471f291d66bf8a0e540"
+    },
+    {
+      "file": "CHANGELOG.md",
+      "bytes": 632,
+      "sha256": "58c60e4420dd79e1cfca977da76fd557bf514006946217be1972582c8fd509f1"
+    },
+    {
+      "file": "CONTINUIDAD.md",
+      "bytes": 1784,
+      "sha256": "cd8dafbc27a9100c6cad67ad6eb8d5b82aa1ded8efe1b4f910dfb5abf1d08f01"
+    },
+    {
+      "file": "Documentacion/01_Producto_y_alcance.md",
+      "bytes": 4674,
+      "sha256": "3446bc931a6a7ec5fe1e894cd35999e44ccf27c04c8f46ca3ee338ee44167fb3"
+    },
+    {
+      "file": "Documentacion/02_Scrum_y_backlog.md",
+      "bytes": 4627,
+      "sha256": "ff0681c157fc62befaac9180cca3c5828cae455bcc1d02a6893500c9301b2b9e"
+    },
+    {
+      "file": "Documentacion/03_Arquitectura_y_datos.md",
+      "bytes": 5734,
+      "sha256": "70d5214095bb1c237b132c667d4e19831a5b2c803dbc1543afc085b88a4f7cf0"
+    },
+    {
+      "file": "Documentacion/04_Pruebas_y_trazabilidad.md",
+      "bytes": 4576,
+      "sha256": "3dce58141ebf4211d7d154e48c7564978ea5215c5a5bb72f92999bc1ac06c0f2"
+    },
+    {
+      "file": "Documentacion/05_Manual_y_demostracion.md",
+      "bytes": 4789,
+      "sha256": "afecbdcc23c1e1e92f9dcc686bdced6386bcf3888de7f53407247521cea13099"
+    },
+    {
+      "file": "Documentacion/06_Decisiones_y_pendientes.md",
+      "bytes": 4471,
+      "sha256": "e09691ff019b8ab64ee3c2c944121db813ed28dc625850c23f43ca78e4df5862"
+    },
+    {
+      "file": "Documentacion/07_Entrega_y_Moqups.md",
+      "bytes": 3687,
+      "sha256": "70fd626ef3bd60ded6d5746ee557139977275f9ebf21a91968de21b11f7107c6"
+    },
+    {
+      "file": "Documentacion/08_Review_y_retrospectiva.md",
+      "bytes": 2585,
+      "sha256": "de174949286a9edf6e346c6c4130785acb80f447ffea3211d84c872719150ca2"
+    },
+    {
+      "file": "Documentacion/backlog.json",
+      "bytes": 22920,
+      "sha256": "7615b4df4d8b6c4d285a14d5c5519897a601a1a54428d5a9b480945e1a3860b5"
+    },
+    {
+      "file": "Documentacion/contrato-api.json",
+      "bytes": 16188,
+      "sha256": "4f06e34fec090f2116bd06d76f1f5dfcbe1656e1f5b2a10517873572b1b1c1b9"
+    },
+    {
+      "file": "Documentacion/docs.css",
+      "bytes": 3686,
+      "sha256": "6c76a15903b9577a3aca2c8f59e4a90a1201acdd5d1cfb420d6e55de3f8df0ee"
+    },
+    {
+      "file": "Documentacion/docs.js",
+      "bytes": 1833,
+      "sha256": "888ccd70a223ff84f8fe0dab14c8091f5d2b8fd52f846500d8a5a376391d843e"
+    },
+    {
+      "file": "Documentacion/Historias_de_usuario.html",
+      "bytes": 17816,
+      "sha256": "9b770fc28da4326f6a7c028b617496a1e39ea09aa4ef91e182d0abc0af1ba13a"
+    },
+    {
+      "file": "Documentacion/Historias_de_usuario.md",
+      "bytes": 16659,
+      "sha256": "e0b6bda2b58933441a2fff55104d9d1f8cb76dcc9b4868aa6960a194da534925"
+    },
+    {
+      "file": "Documentacion/index.html",
+      "bytes": 47870,
+      "sha256": "5325a03b0a716e7845b6e51d47022aa723e77ce03b97be9a5cea341b8140e708"
+    },
+    {
+      "file": "Documentacion/Matriz_trazabilidad.csv",
+      "bytes": 1619,
+      "sha256": "df24f8325f37ec24864ce579382f1ee17e340a8e05a792879eec98249223910c"
+    },
+    {
+      "file": "Documentacion/Matriz_trazabilidad.md",
+      "bytes": 1845,
+      "sha256": "f055f813387b06f51b3221e72c1f271f1b723a60445d41160dd5085dee401c33"
+    },
+    {
+      "file": "Documentacion/Modelo_datos.mmd",
+      "bytes": 566,
+      "sha256": "bd8ccd432814673249d978a49e10c21752395125f28b3f60d05a4e866ad1d101"
+    },
+    {
+      "file": "Documentacion/procedencia.md",
+      "bytes": 606,
+      "sha256": "97330b3f69985ccfa10015647ad5b95e085d2ab184e8c4b57e0122f6e12569b3"
+    },
+    {
+      "file": "Documentacion/Product_Backlog_Galenos.csv",
+      "bytes": 16404,
+      "sha256": "ee0d3c2646b39ac5728db1dbfd3fb5aec38cbfc06b975d39d6c9d78c7539ede7"
+    },
+    {
+      "file": "Documentacion/project-data.js",
+      "bytes": 20329,
+      "sha256": "679b3fdfbc1f7649e5be7735fd90962e930f2193c31057725dbb5a62935b0727"
+    },
+    {
+      "file": "Evidencias/01_acceso.jpg",
+      "bytes": 98091,
+      "sha256": "2ace8a2f5d0608e5eb7a341462294ff25b80101efb55183a5c8fe59216476211"
+    },
+    {
+      "file": "Evidencias/02_inicio_paciente.jpg",
+      "bytes": 77235,
+      "sha256": "b244c82d11a0c5ac1b45c7c389d434404d1a65d2cf54d3f703ba4528cf2652a5"
+    },
+    {
+      "file": "Evidencias/03_reserva_horarios.jpg",
+      "bytes": 90922,
+      "sha256": "8ccfff8e5d05264ef943d8beccb53a0fb8ffb64170994950348f8204033f0ac5"
+    },
+    {
+      "file": "Evidencias/04_reserva_confirmada.jpg",
+      "bytes": 73012,
+      "sha256": "c15bc846118ded00adcd0456ca37771baede98f28704f86b14866c2d722bebc7"
+    },
+    {
+      "file": "Evidencias/05_bono_invalido.jpg",
+      "bytes": 50391,
+      "sha256": "401c2129584409c16eec0d676f5d86b1773ac179f4c9fef1ce8adb53ba144673"
+    },
+    {
+      "file": "Evidencias/06_comprobante_pago.jpg",
+      "bytes": 47883,
+      "sha256": "0d58139bced932bbb77938a98100d9f418c95dd462b170e272156979bee15da0"
+    },
+    {
+      "file": "Evidencias/07_espera_medico.jpg",
+      "bytes": 63410,
+      "sha256": "4429b4bccadcd7a96c8a5e275306e6219e31f4bfabfc3f5585403384c0bc459c"
+    },
+    {
+      "file": "Evidencias/08_comision_calculada.jpg",
+      "bytes": 51695,
+      "sha256": "b0de75a9fe67a18fd8b5a6a41c1f1ffe763342f9df58de0c7d55601d406f1770"
+    },
+    {
+      "file": "Evidencias/09_portal_movil.jpg",
+      "bytes": 30428,
+      "sha256": "c3d57fb704ecc619c63780bb90ee6ceaf0ae862f8dab268efa0f1e4b9ffa53b9"
+    },
+    {
+      "file": "Evidencias/10_segundo_factor.jpg",
+      "bytes": 49229,
+      "sha256": "96766a992f2f775650366aeccff98bb4ecb4ccbabdee06d9b26e857d1369d629"
+    },
+    {
+      "file": "Evidencias/11_documentacion.jpg",
+      "bytes": 69893,
+      "sha256": "312d647e1923f4a35f7a4828b971dc22278e62c0be0028a8a7f8a66dd30b2cac"
+    },
+    {
+      "file": "Evidencias/12_registro_activado.jpg",
+      "bytes": 90925,
+      "sha256": "71aa43df45b57d983a08e4b021506b8e075d53e70f7cc42ec2362ca9f03552c6"
+    },
+    {
+      "file": "Evidencias/verificacion_interfaz.json",
+      "bytes": 774,
+      "sha256": "566a888c3e11cf220029370d9dc34948a9e12834b29edb30f5d70c261c0770ff"
+    },
+    {
+      "file": "Fuentes/Guia_cierre_sprint_original.pdf",
+      "bytes": 160629,
+      "sha256": "82d96398887df63ffe644a9ab9d96554a1dc312e57a8f21dd604c511d91b2272"
+    },
+    {
+      "file": "Fuentes/Guia_prototipo_original.pdf",
+      "bytes": 141467,
+      "sha256": "236a73966eca8a10083aed075e6292dde06b98b2e3193bda1e7e08b494baac12"
+    },
+    {
+      "file": "Fuentes/LEEME.md",
+      "bytes": 689,
+      "sha256": "42b6e7b6866957f2ae53fe3293ef60f60fdb6f44c8a24a46527c1e0dbe4e5102"
+    },
+    {
+      "file": "Fuentes/Presentacion_anterior_original.pdf",
+      "bytes": 298183,
+      "sha256": "a9f725fa00c8363be55a9b7f6383a18fb152698d44351accff9673753d5a509e"
+    },
+    {
+      "file": "herramientas/build-site.cjs",
+      "bytes": 19820,
+      "sha256": "d727d1fcf7a8543370ab5a5ea331caca4482b32a80340e5a6dca99c0c9a4edb6"
+    },
+    {
+      "file": "herramientas/check-site.cjs",
+      "bytes": 1420,
+      "sha256": "e939bff68be307db41320b9688aa0f6ce42f70ed7a9b823cdb4279d9b60e3b41"
+    },
+    {
+      "file": "herramientas/servidor.cjs",
+      "bytes": 1121,
+      "sha256": "0ffc84da588d16bc07db5da346aae41714a833abf15968557581191317bcbd3e"
+    },
+    {
+      "file": "Imagen Galenos original.jpg",
+      "bytes": 235352,
+      "sha256": "feb9895d7d1ee5a115a8098980be0f345d5cc41bc786f216bb13c9b0069036f3"
+    },
+    {
+      "file": "index.html",
+      "bytes": 4651,
+      "sha256": "8b1518767ecc67e7d62ba1d4f26911b61ca79457153f2c2e62443209da72f5f7"
+    },
+    {
+      "file": "Lectura/contenido.js",
+      "bytes": 146340,
+      "sha256": "54355f590a52ca67e849f52b4ccc24250020cb96cd1ea96d80184314cb90855e"
+    },
+    {
+      "file": "Lectura/index.html",
+      "bytes": 1398,
+      "sha256": "11370b699da65cfe5542171d6ecbcc4c1228db8ad4e74b14f3a96d78e42f025f"
+    },
+    {
+      "file": "Lectura/reader.js",
+      "bytes": 591,
+      "sha256": "00638fe78957e3c42c039867afe2eca79db396be762fd746040548b0dcbd6a1c"
+    },
+    {
+      "file": "LEEME.md",
+      "bytes": 2645,
+      "sha256": "35cd976a327712a556efbf209d4315ee4a50a25d3cd986e0bb5a216e4db79d93"
+    },
+    {
+      "file": "Moqups/ESTADO_MOQUPS.md",
+      "bytes": 410,
+      "sha256": "803961a810ecd07f2e97c46fbc0b7af85a98a2363c90a7c55de0e611310ea3e4"
+    },
+    {
+      "file": "Moqups/LEEME.md",
+      "bytes": 300,
+      "sha256": "695e1105149ce10be3f6cf7562bf1cbcc5ad782402220901bdd114402e179c06"
+    },
+    {
+      "file": "Moqups/Mapa_interacciones.csv",
+      "bytes": 1287,
+      "sha256": "5851e3e288c316a98120f81ca6947cb9c2b307aa74e1752b5bbb1d3adc00a984"
+    },
+    {
+      "file": "package.json",
+      "bytes": 408,
+      "sha256": "4b06a41417337afdea25e59b44fa5d62916df29d361b1d55e9ee151aa9acc6ef"
+    },
+    {
+      "file": "portal.css",
+      "bytes": 6027,
+      "sha256": "e22ced4bc1683572b04e57194fa7c15a9c85021c9f531f3723dba56cef759ee8"
+    },
+    {
+      "file": "Presentacion/diapositivas/slide-01.png",
+      "bytes": 403944,
+      "sha256": "83af62038c0376688f6396e771668a42d34b7113a662904ec900f2a034a59d7a"
+    },
+    {
+      "file": "Presentacion/diapositivas/slide-02.png",
+      "bytes": 63957,
+      "sha256": "26f5abd3d2105d820cb27e9e0207e705715c0bdc329baf20696b84f03cc4b153"
+    },
+    {
+      "file": "Presentacion/diapositivas/slide-03.png",
+      "bytes": 60526,
+      "sha256": "71f656dfeeb4f494025e58820b712c83cb2b025cdafdc834893fc4d3d3135d3b"
+    },
+    {
+      "file": "Presentacion/diapositivas/slide-04.png",
+      "bytes": 143134,
+      "sha256": "fa53ce686c6450d133c99067b92da66cc67684fb700a5c52872dcf260c84c6e5"
+    },
+    {
+      "file": "Presentacion/diapositivas/slide-05.png",
+      "bytes": 209766,
+      "sha256": "2e8a2e410cdf877f78ca5c1115c3f073a75d947a6a03308251d7932bffbf4dcf"
+    },
+    {
+      "file": "Presentacion/diapositivas/slide-06.png",
+      "bytes": 153982,
+      "sha256": "d7105b21ecfceba27f77ae57bf42ff30c49378f2fddf1e06c5a5906d1a81edea"
+    },
+    {
+      "file": "Presentacion/diapositivas/slide-07.png",
+      "bytes": 147160,
+      "sha256": "d0d7c5e8676f6d4bdb94c011c81109d444ac1dd3e03beb6a8d74b921d47feeb7"
+    },
+    {
+      "file": "Presentacion/diapositivas/slide-08.png",
+      "bytes": 157039,
+      "sha256": "c851b773228358d0f7c380049e6b11be2ef71479dab508d7c61cb38670afb209"
+    },
+    {
+      "file": "Presentacion/diapositivas/slide-09.png",
+      "bytes": 119407,
+      "sha256": "2555d6754a83ae9364b52d37749603c793fc8f253fe3cc0901f9ae8c7a4b7b43"
+    },
+    {
+      "file": "Presentacion/diapositivas/slide-10.png",
+      "bytes": 67880,
+      "sha256": "3af59e611e7e172a643a98c5ad467a13ccb26a026db0c7311ef8770cd3ef25be"
+    },
+    {
+      "file": "Presentacion/diapositivas/slide-11.png",
+      "bytes": 59710,
+      "sha256": "821c1d4da3cfe0f4d2a42fb9fd7df949994b212327e382b2dfc31bdfc84c5279"
+    },
+    {
+      "file": "Presentacion/diapositivas/slide-12.png",
+      "bytes": 74469,
+      "sha256": "8349623defda1e968fda9bc71b10ac0cd9f9ae0e667d7d464be873144240d581"
+    },
+    {
+      "file": "Presentacion/index.html",
+      "bytes": 4077,
+      "sha256": "f61ef2ec77411d998bd9437fce3361eebc20da69b81450f60eef31021446eb96"
+    },
+    {
+      "file": "Presentacion/viewer.js",
+      "bytes": 987,
+      "sha256": "e9dba0b6544819d4b45c87b29cf74d9d20031f10c4a5fdee87e6a3ac7ae25ebb"
+    },
+    {
+      "file": "Presentacion_Galenos_Review_y_Retrospectiva.pptx",
+      "bytes": 586966,
+      "sha256": "46aadef9c98f63ebbfa21704a834b3fb00663ddcc0cfa1763e42414c319fddf1"
+    },
+    {
+      "file": "Prototipo Centro Médico Galenos.html",
+      "bytes": 4651,
+      "sha256": "8b1518767ecc67e7d62ba1d4f26911b61ca79457153f2c2e62443209da72f5f7"
+    },
+    {
+      "file": "Prototipo Centro Médico Galenos.md",
+      "bytes": 2645,
+      "sha256": "35cd976a327712a556efbf209d4315ee4a50a25d3cd986e0bb5a216e4db79d93"
+    },
+    {
+      "file": "Pruebas/domain.test.cjs",
+      "bytes": 12305,
+      "sha256": "ae411a0c225bb3b3c9dd176a040bb75dd43c6607ac79b3ed39c233074439f8ff"
+    },
+    {
+      "file": "Pruebas/ejecutar.cjs",
+      "bytes": 2339,
+      "sha256": "1c8f0eea3fd3d0442efe03f6f0901ac15b9b43af2d7228b3c9a05bd47a095365"
+    },
+    {
+      "file": "Pruebas/resultado.json",
+      "bytes": 109,
+      "sha256": "e6674ad4699052a2bfbe1076f3ecdad4eff0d13f2522871f67fb3e7b3f10e114"
+    },
+    {
+      "file": "Pruebas/RESULTADOS.md",
+      "bytes": 1358,
+      "sha256": "e0b5e5f0446d7983fe1d35b1422dee2f21de893d2f124b836872eb87876fe9c8"
+    },
+    {
+      "file": "Pruebas/resultados.tap",
+      "bytes": 5958,
+      "sha256": "d67f2cff330c413de9060096ca7857b656f7fbba7955f073f552f555b179d3d3"
+    },
+    {
+      "file": "PUBLICACION.md",
+      "bytes": 1676,
+      "sha256": "cd7b506213585bf62aacb7087360921e6e81fb6501e33f04126fca43af9277cc"
+    },
+    {
+      "file": "README.md",
+      "bytes": 1503,
+      "sha256": "66b319dc59ad5065359ec86630d62d952154b77506e5d7b168164142fceca4a2"
+    },
+    {
+      "file": "Recursos/catalogo.js",
+      "bytes": 429,
+      "sha256": "002bf612d356dd60567ce86d6f40e7011461f909f3fa07e2df34b23597df8639"
+    },
+    {
+      "file": "Recursos/index.html",
+      "bytes": 15172,
+      "sha256": "8a92088d2a40b117b518ece8f7754b4ee1c5dfcf4a6ccc7a90a20b5d11f2e7c8"
+    },
+    {
+      "file": "site.config.json",
+      "bytes": 216,
+      "sha256": "946914c328f52e973a9b3cc562c82b59d3569ffdd3f0058d8f7ab1604b7e7dbb"
+    }
+  ]
+}

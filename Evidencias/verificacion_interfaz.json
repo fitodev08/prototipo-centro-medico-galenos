@@ -1,0 +1,26 @@
+{
+  "fecha": "2026-11-14",
+  "reservaConfirmada": "GAL-1005",
+  "bonoInvalido": "Rechazado sin registrar pago",
+  "pagoValido": "REC-2026005",
+  "espera": "Camila visible para su médico el día de atención",
+  "atencion": "Marcada como atendida",
+  "comision": {
+    "recaudacion": 56000,
+    "total": 11200,
+    "comprobante": "COM-101",
+    "estado": "Pagada"
+  },
+  "segundoFactor": "Código incorrecto rechazado y código de demostración aceptado",
+  "movil": {
+    "viewport": 390,
+    "anchoContenido": 375,
+    "anchoDocumento": 375
+  },
+  "erroresConsola": 0,
+  "backlog": {
+    "filas": 24,
+    "HU47": "Pendiente de estimación"
+  },
+  "registro": "Cuenta de prueba registrada, activación recuperada tras recarga y acceso verificado"
+}

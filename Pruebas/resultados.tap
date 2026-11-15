@@ -1,0 +1,166 @@
+TAP version 13
+# Subtest: RF05: una reserva retira el horario y rechaza un segundo paciente sin crear otra cita
+ok 1 - RF05: una reserva retira el horario y rechaza un segundo paciente sin crear otra cita
+  ---
+  duration_ms: 1070.3368
+  type: 'test'
+  ...
+# Subtest: RF01: los roles no autorizados no reservan ni registran pagos
+ok 2 - RF01: los roles no autorizados no reservan ni registran pagos
+  ---
+  duration_ms: 156.6419
+  type: 'test'
+  ...
+# Subtest: RF06: límite de 24 horas inclusivo, liberación y rechazo de menos de 24 horas
+ok 3 - RF06: límite de 24 horas inclusivo, liberación y rechazo de menos de 24 horas
+  ---
+  duration_ms: 121.277
+  type: 'test'
+  ...
+# Subtest: RF06: el paciente no anula una cita ajena ni una cita pagada; secretaría conserva el pago
+ok 4 - RF06: el paciente no anula una cita ajena ni una cita pagada; secretaría conserva el pago
+  ---
+  duration_ms: 85.24
+  type: 'test'
+  ...
+# Subtest: RF17: reagendar cambia la ocupación en una operación y conserva el código de reserva
+ok 5 - RF17: reagendar cambia la ocupación en una operación y conserva el código de reserva
+  ---
+  duration_ms: 108.9299
+  type: 'test'
+  ...
+# Subtest: RF17: el fallo por especialidad o por ocupación no libera la reserva original
+ok 6 - RF17: el fallo por especialidad o por ocupación no libera la reserva original
+  ---
+  duration_ms: 116.5939
+  type: 'test'
+  ...
+# Subtest: RF02: se rechazan bloques solapados aunque intenten usar otra sucursal
+ok 7 - RF02: se rechazan bloques solapados aunque intenten usar otra sucursal
+  ---
+  duration_ms: 95.1509
+  type: 'test'
+  ...
+# Subtest: RF03: generación trimestral idempotente y sin horarios disponibles en días no laborables
+ok 8 - RF03: generación trimestral idempotente y sin horarios disponibles en días no laborables
+  ---
+  duration_ms: 121.2169
+  type: 'test'
+  ...
+# Subtest: RF04: se solicitan confirmaciones y las reservas afectadas quedan identificadas
+ok 9 - RF04: se solicitan confirmaciones y las reservas afectadas quedan identificadas
+  ---
+  duration_ms: 101.8531
+  type: 'test'
+  ...
+# Subtest: RF03/04: agregar un día no laborable con reservas exige confirmación
+ok 10 - RF03/04: agregar un día no laborable con reservas exige confirmación
+  ---
+  duration_ms: 93.3083
+  type: 'test'
+  ...
+# Subtest: RF08: un bono inválido no crea pago ni cambia el estado del paciente
+ok 11 - RF08: un bono inválido no crea pago ni cambia el estado del paciente
+  ---
+  duration_ms: 94.6797
+  type: 'test'
+  ...
+# Subtest: RF08: pago con folio único, auditoría, estado en espera y rechazo del duplicado
+ok 12 - RF08: pago con folio único, auditoría, estado en espera y rechazo del duplicado
+  ---
+  duration_ms: 88.1671
+  type: 'test'
+  ...
+# Subtest: RF09: el médico ve solo su lista pagada del día y no marca pacientes ajenos
+ok 13 - RF09: el médico ve solo su lista pagada del día y no marca pacientes ajenos
+  ---
+  duration_ms: 98.8432
+  type: 'test'
+  ...
+# Subtest: RF10: los filtros de recaudación concilian exactamente con los pagos de caja
+ok 14 - RF10: los filtros de recaudación concilian exactamente con los pagos de caja
+  ---
+  duration_ms: 89.2324
+  type: 'test'
+  ...
+# Subtest: RF19: la comisión utiliza la hora base por especialidad y no el monto cobrado
+ok 15 - RF19: la comisión utiliza la hora base por especialidad y no el monto cobrado
+  ---
+  duration_ms: 117.6397
+  type: 'test'
+  ...
+# Subtest: RF14/19: vigencias futuras y cambios de configuración conservan los periodos emitidos
+ok 16 - RF14/19: vigencias futuras y cambios de configuración conservan los periodos emitidos
+  ---
+  duration_ms: 108.6782
+  type: 'test'
+  ...
+# Subtest: RF11: secretaría no emite un cálculo desactualizado después de un nuevo pago
+ok 17 - RF11: secretaría no emite un cálculo desactualizado después de un nuevo pago
+  ---
+  duration_ms: 87.6388
+  type: 'test'
+  ...
+# Subtest: RF18/12: ajuste con motivo, cálculo original conservado y registro de pago informativo
+ok 18 - RF18/12: ajuste con motivo, cálculo original conservado y registro de pago informativo
+  ---
+  duration_ms: 94.3732
+  type: 'test'
+  ...
+# Subtest: RF15: usuarios desactivados no ingresan y un administrador no pierde su propio acceso
+ok 19 - RF15: usuarios desactivados no ingresan y un administrador no pierde su propio acceso
+  ---
+  duration_ms: 101.5401
+  type: 'test'
+  ...
+# Subtest: RF01: cinco intentos bloquean quince minutos y al vencer el plazo se permite el acceso
+ok 20 - RF01: cinco intentos bloquean quince minutos y al vencer el plazo se permite el acceso
+  ---
+  duration_ms: 108.3353
+  type: 'test'
+  ...
+# Subtest: Soporte RF01: desbloqueo manual autorizado y auditado
+ok 21 - Soporte RF01: desbloqueo manual autorizado y auditado
+  ---
+  duration_ms: 107.7462
+  type: 'test'
+  ...
+# Subtest: RNF09: el flujo exige el segundo factor habilitado y rechaza códigos incorrectos
+ok 22 - RNF09: el flujo exige el segundo factor habilitado y rechaza códigos incorrectos
+  ---
+  duration_ms: 98.5891
+  type: 'test'
+  ...
+# Subtest: RF13: registro con hash, consentimiento, unicidad y activación previa al acceso
+ok 23 - RF13: registro con hash, consentimiento, unicidad y activación previa al acceso
+  ---
+  duration_ms: 487.6278
+  type: 'test'
+  ...
+# Subtest: RF16: sucursal y asignación de profesionales por configuración
+ok 24 - RF16: sucursal y asignación de profesionales por configuración
+  ---
+  duration_ms: 179.1095
+  type: 'test'
+  ...
+# Subtest: RF07: recordatorio a 24 horas, tres reintentos y alerta final
+ok 25 - RF07: recordatorio a 24 horas, tres reintentos y alerta final
+  ---
+  duration_ms: 119.2553
+  type: 'test'
+  ...
+# Subtest: Fechas: conversión horaria de Santiago y fin de mes correcto
+ok 26 - Fechas: conversión horaria de Santiago y fin de mes correcto
+  ---
+  duration_ms: 1.4263
+  type: 'test'
+  ...
+1..26
+# tests 26
+# suites 0
+# pass 26
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6774.5059

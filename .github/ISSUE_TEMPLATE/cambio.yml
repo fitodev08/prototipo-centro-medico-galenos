@@ -1,0 +1,18 @@
+name: Solicitar un cambio
+description: Registrar una mejora o corrección del proyecto Galenos.
+title: "[Cambio] "
+body:
+  - type: textarea
+    id: necesidad
+    attributes:
+      label: ¿Qué necesitas cambiar y por qué?
+      description: Indica la pantalla, documento o recorrido. Usa datos ficticios.
+    validations:
+      required: true
+  - type: textarea
+    id: aceptacion
+    attributes:
+      label: ¿Cómo comprobaremos que está listo?
+      description: Describe el resultado esperado o un ejemplo de uso.
+    validations:
+      required: true

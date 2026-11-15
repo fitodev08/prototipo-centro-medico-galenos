@@ -1,0 +1,12 @@
+{
+  "name": "prototipo-centro-medico-galenos",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Portal, prototipo navegable y documentación del Centro Médico Galenos",
+  "scripts": {
+    "start": "node herramientas/servidor.cjs",
+    "test": "node --test Pruebas/domain.test.cjs",
+    "build": "node herramientas/build-site.cjs",
+    "check": "node herramientas/check-site.cjs"
+  }
+}

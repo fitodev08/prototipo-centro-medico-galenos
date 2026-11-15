@@ -1,0 +1,607 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "SGMG API propuesta",
+    "version": "0.1.0",
+    "description": "Contrato inicial para revisión. No implementado en el prototipo local. El servidor debe autenticar, autorizar y validar todas las operaciones."
+  },
+  "servers": [
+    {
+      "url": "https://sgmg.example/api",
+      "description": "Dirección ilustrativa; no es un servicio operativo"
+    }
+  ],
+  "paths": {
+    "/auth/login": {
+      "post": {
+        "summary": "Ingresar con credenciales y obtener desafío adicional si corresponde",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        },
+        "security": []
+      }
+    },
+    "/auth/second-factor": {
+      "post": {
+        "summary": "Verificar código de un solo uso real en la implementación futura",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        },
+        "security": []
+      }
+    },
+    "/patients": {
+      "post": {
+        "summary": "Registrar paciente con consentimiento y unicidad",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        },
+        "security": []
+      }
+    },
+    "/patients/activate": {
+      "post": {
+        "summary": "Activar cuenta mediante token de correo",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        },
+        "security": []
+      }
+    },
+    "/slots": {
+      "get": {
+        "summary": "Consultar disponibilidad por sucursal, especialidad, médico y fecha",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        }
+      }
+    },
+    "/appointments": {
+      "post": {
+        "summary": "Reservar mediante transacción y unicidad por horario",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        }
+      }
+    },
+    "/appointments/{id}/cancel": {
+      "post": {
+        "summary": "Anular con permisos y reglas de anticipación",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/appointments/{id}/reschedule": {
+      "post": {
+        "summary": "Reagendar atómicamente",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/availability": {
+      "post": {
+        "summary": "Registrar bloques sin solapamiento",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        }
+      }
+    },
+    "/agendas/generate": {
+      "post": {
+        "summary": "Generar tres meses excluyendo calendario no laborable",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        }
+      }
+    },
+    "/payments": {
+      "post": {
+        "summary": "Registrar pago con folio idempotente",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        }
+      }
+    },
+    "/doctors/me/waiting": {
+      "get": {
+        "summary": "Consultar lista propia del día con pago validado",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        }
+      }
+    },
+    "/appointments/{id}/complete": {
+      "post": {
+        "summary": "Marcar atención propia del día",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/reports/revenue": {
+      "get": {
+        "summary": "Consultar recaudación conciliada por filtros",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        }
+      }
+    },
+    "/commissions/calculate": {
+      "post": {
+        "summary": "Calcular por base de especialidad y porcentaje vigente",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        }
+      }
+    },
+    "/commissions/{id}/issue": {
+      "post": {
+        "summary": "Emitir y cerrar cálculo",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/commissions/{id}/adjustments": {
+      "post": {
+        "summary": "Registrar ajuste con motivo y auditoría",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/commissions/{id}/payment": {
+      "post": {
+        "summary": "Registrar referencia de pago informativo",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/users": {
+      "post": {
+        "summary": "Crear usuario con rol autorizado",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        }
+      }
+    },
+    "/branches": {
+      "post": {
+        "summary": "Crear sucursal por configuración",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        }
+      }
+    },
+    "/audit": {
+      "get": {
+        "summary": "Consultar auditoría con permisos",
+        "responses": {
+          "200": {
+            "description": "Operación aceptada"
+          },
+          "400": {
+            "description": "Datos o regla de negocio inválidos"
+          },
+          "401": {
+            "description": "Sesión requerida"
+          },
+          "403": {
+            "description": "Rol no autorizado"
+          },
+          "409": {
+            "description": "Conflicto de estado, unicidad o concurrencia"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "session": {
+        "type": "apiKey",
+        "in": "cookie",
+        "name": "sgmg_session"
+      }
+    },
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "Reservation": {
+        "type": "object",
+        "required": [
+          "slotId"
+        ],
+        "properties": {
+          "slotId": {
+            "type": "string"
+          }
+        }
+      },
+      "Payment": {
+        "type": "object",
+        "required": [
+          "appointmentId",
+          "amount",
+          "method"
+        ],
+        "properties": {
+          "appointmentId": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "method": {
+            "type": "string",
+            "enum": [
+              "cash",
+              "card",
+              "document",
+              "fonasa",
+              "isapre"
+            ]
+          },
+          "voucherReference": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "session": []
+    }
+  ]
+}

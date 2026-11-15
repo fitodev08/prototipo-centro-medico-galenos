@@ -1,0 +1,14 @@
+erDiagram
+    USUARIO ||--o{ CITA : reserva
+    PROFESIONAL ||--o{ HORARIO : ofrece
+    ESPECIALIDAD ||--o{ PROFESIONAL : agrupa
+    SUCURSAL ||--o{ HORARIO : contiene
+    PROFESIONAL ||--o{ DISPONIBILIDAD : define
+    HORARIO ||--o| CITA : admite_reserva_activa
+    CITA ||--o| PAGO : registra
+    CITA ||--o{ NOTIFICACION : origina
+    PROFESIONAL ||--o{ COMISION : recibe_cobro
+    COMISION ||--o{ DETALLE_COMISION : contiene
+    PAGO ||--o{ DETALLE_COMISION : fundamenta
+    COMISION ||--o{ AJUSTE : conserva
+    USUARIO ||--o{ AUDITORIA : ejecuta
