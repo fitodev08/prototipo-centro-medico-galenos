@@ -1,0 +1,37 @@
+name: Importar proyecto Galenos
+on:
+  push:
+    paths: [Galenos_publicacion.zip]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Importar los archivos del proyecto
+        shell: bash
+        run: |
+          if [ ! -f Galenos_publicacion.zip ]; then
+            echo "El proyecto ya fue importado."
+            exit 0
+          fi
+          python3 - <<'PY'
+          import zipfile, pathlib
+          root=pathlib.Path.cwd().resolve()
+          with zipfile.ZipFile('Galenos_publicacion.zip') as archive:
+              for entry in archive.infolist():
+                  target=(root/entry.filename).resolve()
+                  if not target.is_relative_to(root) or '.git' in pathlib.PurePosixPath(entry.filename).parts:
+                      raise RuntimeError('Ruta inválida en el paquete')
+                  if entry.filename.startswith('.github/workflows/'):
+                      raise RuntimeError('Los workflows se conservan desde el repositorio')
+              archive.extractall(root)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -- Galenos_publicacion.zip
+          git add .
+          git commit -m "Publicar prototipo Galenos, presentación y documentación"
+          git push
