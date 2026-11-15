@@ -1,0 +1,45 @@
+name: Publicar portal Galenos
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Importar proyecto Galenos]
+    types: [completed]
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Comprobar que el proyecto fue importado
+        run: test -f package.json
+      - name: Verificar versión de Node
+        run: node --version
+      - name: Probar reglas del dominio
+        run: npm test
+      - name: Construir portal y catálogo
+        run: npm run build
+      - name: Validar enlaces publicados
+        run: npm run check
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
